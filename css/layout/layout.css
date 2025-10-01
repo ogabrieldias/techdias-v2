@@ -1,0 +1,116 @@
+
+/* Aqui começa a configuração do header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    /* background-color: transparent; */
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    transition: .5s;
+    background: var(--bg-color-header);
+}
+
+.header.sticky {
+    box-shadow:  0 .1rem 1rem var(--shadow-color);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--logo);
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    color: var(--text-color-figma);
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+
+.header.sticky .navbar a {
+    color: var(--text-color-figma);
+}
+
+.navbar a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .2rem;
+    bottom: -6px;
+    background: var(--white-color);
+}
+
+.header.sticky .navbar a::before { /* Cor do Sticky(barra em baixo da letra) */
+    background: var(--sticky);
+    opacity: .7; 
+}
+
+.header.sticky .navbar a.active { /* Cor da letra ativa */
+    color: var(--sticky);
+}
+
+#darkMode-icon {
+    font-size: 2.4rem;
+    color: var(--color-title);
+    cursor: pointer;
+}
+
+.header.sticky #darkMode-icon {
+    color: var(--text-color-figma);
+    opacity: .9;
+    margin-right: 3rem;
+}
+
+#menu-icon {
+    font-size: 3.6rem; 
+    color: var(--icon-menu);
+    display: none;
+}
+/* Aqui termina a configuração do header */
+
+
+/* Aqui começa a configuração do footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: var(--bg-color-header);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+    color: var(--text-color-figma);
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--text-color-figma);
+    border-radius: .8rem;
+    --tw-shadow: inset 0 2px 10px var(--color-title);
+    border: .2rem solid var(--bg-color-header);
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    outline-color: var(--text-color-figma); 
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--text-color-invert);
+}
+/* Aqui termina a configuração do footer */

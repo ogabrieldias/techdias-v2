@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;     
+}
+
+body {
+    background-color: var(--bg-color-figma);
+    color: var(--text-color);
+    position: relative;
+    z-index: 0;
+}
+
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10rem 7% 2rem;
+    background-color: var(--bg-color-figma);
+    position: relative; /* Limita elementos absolutos */
+    /* overflow: hidden;   Evita que elementos ultrapassem */
+    z-index: -1;
+}
+
+
+
+/* Aqui começa a configuração da section home */
+.home {
+    display: flex;
+    align-items: center;
+    position: unset;
+    z-index: 0;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.home .home-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .home-content {
+    z-index: 1;  Preciso verificar se é necessario 
+} */
+
+.h2_home {
+    font-size: 4rem;
+    color: var(--text-color-figma); 
+}
+
+.home-content h1 {
+    font-size: 10rem; 
+    font-weight: 700;
+    margin-bottom: .3rem;
+    color: var(--text-color-figma);
+}
+
+.home-content p {
+    font-size: 2.0rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    color: var(--text-color-figma);
+    text-align: center
+}
+
+input.btn, a.btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--button-background-color);
+    border-radius: 5rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--text-color-figma);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: 3px solid var(--button-border-background-color);
+    transition: .5s ease;
+
+}
+
+input.btn:hover, a.btn:hover {
+    background: var(--button-background-hover-color);
+    color: var(--white-color);
+    
+}
+
+#container_connect_button_home {
+    margin: 3rem;
+}
+
+.icone {
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.icone:hover {
+    outline-color: var(--text-color-figma); 
+    outline-offset: 2px;
+}
+

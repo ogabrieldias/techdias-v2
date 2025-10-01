@@ -1,0 +1,617 @@
+@media (min-width: 320px) {
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color-header);
+        border-top: .1rem solid var(--text-color-figma);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem; 
+        color: var(--text-color-figma);
+        display: block;
+    }
+
+    .h2_home {
+        font-size: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+    }
+    
+    #container_connect_button_home {
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .title {
+        font-size: 4.3rem !important;
+    }
+
+    .main_title {
+        font-size: 2.45rem !important;
+        
+    }
+
+    .container_secundario_about {
+        flex-direction: column;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    .profission_span {
+        font-size: 1.3rem;
+    }
+
+    .container_profissao {
+        gap: 1rem;
+    }
+
+    .profissao_about {
+        height: 4.3rem;
+    }
+
+    .contato-item {
+        min-width: 99px;
+    }
+
+    .imagem_desktop {
+        display: none!important;
+    }
+
+    .imagem_mobile {
+        display: block;
+    }
+
+    .container_descricao {
+        margin-bottom: 13rem;
+    }
+
+    .fixedText_none {
+        display: block;
+    }
+
+    .titulo_projeto { /* Titulo do projeto */
+        font-size:4rem; 
+        margin-bottom:1rem; 
+        text-align: center;
+    }
+
+    #titulo_clima {
+        color: var(--color_title_projects_moldura01);
+    }
+
+    #titulo_cardapio {
+        color: var(--color_title_projects_moldura02);
+    }
+
+    #titulo_portfolio {
+        color: var(--color_title_projects_moldura03);
+    }
+
+    #titulo_android {
+        color: var(--color_title_projects_moldura04);
+    }
+
+    #titulo_login {
+        color: var(--color_title_projects_moldura05);
+    }
+
+    .paragraph_projeto { /* Paragrafo do projeto */
+        font-size: 1.7rem; 
+        color: var(--text-color-figma);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .site_button_project {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .footer-iconTop {
+        margin: auto;
+    }
+}
+
+@media (min-width: 375px) {
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color-header);
+        border-top: .1rem solid var(--text-color-figma);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem; 
+        color: var(--text-color-figma);
+        display: block;
+    }
+
+    .h2_home {
+        font-size: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+    }
+
+    #container_connect_button_home {
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .title {
+        font-size: 4.3rem !important;
+    }
+
+    .main_title {
+        font-size: 2.45rem !important;
+        
+    }
+
+    .container_secundario_about {
+        flex-direction: column;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    .profission_span {
+        font-size: 1.6rem;
+    }
+
+    .container_profissao {
+        gap: 1rem;
+    }
+
+    .profissao_about {
+        height: 4.3rem;
+    }
+
+    .contato-item {
+        min-width: 99px;
+    }
+
+    .imagem_desktop {
+        display: none!important;
+    }
+
+    .titulo_projeto { /* Titulo do projeto */
+        font-size:4rem; 
+        margin-bottom:1rem; 
+        text-align: center;
+    }
+
+    .paragraph_projeto { /* Paragrafo do projeto */
+        font-size: 1.7rem; 
+        color: var(--text-color-figma);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .site_button_project {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-iconTop {
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 425px) {
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color-header);
+        border-top: .1rem solid var(--text-color-figma);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem; 
+        color: var(--text-color-figma);
+        display: block;
+    }
+
+    .h2_home {
+        font-size: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+    }
+
+    #container_connect_button_home {
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .title {
+        font-size: 5.5rem !important;
+    }
+
+    .main_title {
+        font-size: 3.45rem !important;
+        
+    }
+
+    .container_secundario_about {
+        flex-direction: column;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    .profission_span {
+        font-size: 1.6rem;
+    }
+
+    .container_profissao {
+        gap: 1rem;
+    }
+
+    .profissao_about {
+        height: 4.3rem;
+    }
+
+    .contato-item {
+        min-width: 99px;
+    }
+
+    .container_imagem_projects {
+        gap: 1rem;
+    }
+
+    .imagem_mobile {
+        display: block;
+    }
+
+    .imagem_desktop {
+        display: none!important;
+    }
+
+    .titulo_projeto { /* Titulo do projeto */
+        font-size:4rem; 
+        margin-bottom:1rem; 
+        text-align: center;
+    }
+
+    .paragraph_projeto { /* Paragrafo do projeto */
+        font-size: 1.7rem; 
+        color: var(--text-color-figma);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .site_button_project {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-iconTop {
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color-header);
+        border-top: .1rem solid var(--text-color-figma);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem; 
+        color: var(--text-color-figma);
+        display: block;
+    }
+
+    .h2_home {
+        font-size: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+    }
+
+    #container_connect_button_home {
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .title {
+        font-size: 5.5rem !important;
+    }
+
+    .main_title {
+        font-size: 3.45rem !important;
+        
+    }
+
+    .container_secundario_about {
+        flex-direction: row;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    .profission_span {
+        font-size: 1.6rem;
+    }
+
+    .container_profissao {
+        gap: 1rem;
+    }
+
+    .profissao_about {
+        height: 4.3rem;
+    }
+
+    .contato-item {
+        min-width: 99px;
+    }
+
+    .container_imagem_projects {
+        gap: 1rem;
+    }
+
+    .imagem_mobile {
+        display: block!important;
+    }   
+
+    .imagem_desktop {
+        display: none!important;
+    }
+
+    .container_descricao {
+        margin-bottom: 0rem;
+    }
+
+    .fixedText_none {
+        display: none;
+    }
+
+    .titulo_projeto { /* Titulo do projeto */
+        font-size:4rem; 
+        margin-bottom:1rem; 
+        text-align: center;
+    }
+
+    .paragraph_projeto { /* Paragrafo do projeto */
+        font-size: 1.7rem; 
+        color: var(--text-color-figma);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .site_button_project {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-iconTop {
+        margin: unset;
+    }
+
+}
+
+@media (min-width: 	1024px) {
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color-header);
+        border-top: .1rem solid var(--text-color-figma);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem; 
+        color: var(--text-color-figma);
+        display: block;
+    }
+
+    .h2_home {
+        font-size: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 10rem;
+    }
+
+    .home-content p {
+        font-size: 2.7rem;
+    }
+
+    #container_connect_button_home {
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .title {
+        font-size: 10rem !important;
+    }
+
+    .main_title {
+        font-size: 4.5rem !important;
+    }
+
+    .container_secundario_about {
+        flex-direction: row;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .profission_span {
+        font-size: 1.6rem;
+    }
+
+    .container_profissao {
+        gap: 1rem;
+    }
+
+    .profissao_about {
+        height: 4.3rem;
+    }
+
+    .contato-item {
+        min-width: 99px;
+    }
+
+    .container_imagem_projects {
+        gap: 1rem;
+    }
+
+    .imagem_mobile {
+        display: none!important;
+    }   
+
+    .imagem_desktop {
+        display: block!important;
+    }
+
+
+
+    .fixedText_none {
+        display: none;
+    }
+
+    .titulo_projeto { /* Titulo do projeto */
+        font-size:4rem; 
+        margin-bottom:1rem; 
+        text-align: center;
+    }
+
+    .paragraph_projeto { /* Paragrafo do projeto */
+        font-size: 1.7rem; 
+        color: var(--text-color-figma);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .site_button_project {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-iconTop {
+        margin: unset;
+    }
+
+}
+
+
+
+
+
+

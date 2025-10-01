@@ -1,0 +1,30 @@
+:root {
+  /* Cores Tela Projects*/
+  /* 🔵 Azuis */
+  --color_blue_moldura03: #03045E;
+
+  /* 🔴 Vermelhos */
+  --color_red_moldura02: #550000;
+
+  /* 🟣 Roxos */
+  --color_violet_moldura01: #560BAD;
+  --color_violet_moldura05: #3B0A45;
+
+  /* 🟢 Verdes */
+  --color_green_moldura04: #38B000;
+
+  /* 🟤 Marrons */
+  --color_brown_moldura06: #6F4518;
+  /* Fim cores tela */
+
+  /* Cores Titulo Projects */
+  --color_title_projects_moldura01: #560BAD;
+  --color_title_projects_moldura02: #550000;
+  --color_title_projects_moldura03: #03045E;
+  --color_title_projects_moldura04: #38B000;
+  --color_title_projects_moldura05: #3B0A45;
+  --color_title_projects_moldura06: #6F4518;
+
+  /* Fim Cores Titulo Projects */
+}
+

@@ -1,0 +1,217 @@
+#sobre { /* Background da section */
+  background-color: var(--bg-color-figma);
+}
+
+.sobre_content { /* Aqui começa estilos gerais para o efeito de titulo "About" */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container_secundario_about { /* Container geral que engloba o container de imagem e o container de descrição */
+  width: 100%; 
+  display: flex; 
+  padding: 1rem; 
+  flex-wrap: wrap; 
+  box-sizing: border-box;
+}
+
+.container_imagem_about { /* Container da esquerda que engloba a imagem */
+  flex: 1 1 300px; 
+  min-width: 250px; 
+  height: auto; 
+  display: flex; 
+  align-items: center;
+  justify-content: center
+}
+
+#avatar { /* Avatar image */
+  width: 70%;
+  height: 50%;
+}
+
+#h3_about {
+  color: var(--text-color-figma);
+}
+
+#paragraph_about {
+  color: var(--text-color-figma);
+}
+
+#h4_about {
+  color: var(--text-color-figma);
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.container_descricao_about { /* Container da direita que engloba a descrição */
+  flex: 7 1 300px; 
+  min-width: 250px; 
+  padding: 2rem; 
+  box-sizing: border-box; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.container_profissao { /* Container que engloba as profissões */
+  width: 100%; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 2rem; 
+  color: white; 
+  font-size: 1.7rem; 
+  margin-bottom: 1rem; 
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.profissao_about {
+  /* width: 200px;  */
+  height: 5rem; 
+  display: flex; 
+  background-color: var(--button-background-color-02); 
+  justify-content: center; 
+  align-items: center; 
+  padding: 1.2rem 2.8rem;
+  border-radius: 50px; 
+  border: .2rem solid var(--bg-color-header);
+  flex-shrink: 0; flex-grow: 0;
+  cursor: pointer;
+  outline: .2rem solid transparent;
+  transition: .5s ease;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profissao_about:hover {
+  transform: scale(1.10);
+  background-color: var(--button-background-color-02-hover);
+  outline-color: var(--text-color-figma); 
+}
+
+.profission_span { 
+  font-family: Rajdhani, 
+  sans-serif; 
+  font-size: 1.6rem; 
+  white-space: nowrap;
+}
+
+.connect_me { /* Container que engloba o connect with me */
+  width: 100%; 
+  flex-shrink: 0; 
+  padding: 1rem; 
+  box-sizing: border-box; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1rem;
+}
+
+#h4_connect_me {
+  font-size: 2.3rem; 
+  color: var(--text-color-figma); 
+  margin: 0; 
+  align-self: self-start;
+  margin: auto;
+}
+
+.container_connect_button { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  justify-content: center; 
+  align-self: flex-start;
+  margin: auto;
+}
+
+.contato-item {
+  text-align: center;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+  padding: 0.5rem 1rem; 
+  border-radius: 8px; 
+  text-align: center; 
+  color: white; 
+  min-width: 120px;
+}
+
+.contato-item:hover {
+  transform: scale(1.20);
+}
+
+.contato-item:hover .icone i {
+  transform: scale(1.2);
+}
+
+.collor_connect_icon {
+  color: white; 
+  text-decoration: none;
+}
+
+.icone {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 2rem; 
+  margin-bottom: 0.3rem;
+}
+
+.icone i {
+  font-size: 26px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.color_connect_icon:hover #gmail {
+  color: #c71610;
+}
+
+.color_connect_icon:hover #whatsapp {
+  color: #4FCE5D;
+}
+
+.color_connect_icon:hover #linkedin {
+  color: #0072b1;
+}
+
+.color_connect_icon:hover #github {
+  color: #6E40C9;
+}
+
+
+
+.icon-circle {
+  background-color: #374151;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.icon-circle i {
+  color: #00ffcc;
+  font-size: 22px;
+}
+
+
+
+.icon-circle.react-js i { color: #61dafb; }       /* React.js */
+.icon-circle.node-js i { color: #68a063; }        /* Node.js */
+.icon-circle.mongodb i { color: #47a248; }        /* MongoDB */
+.icon-circle.aws-s3 i { color: #ff9900; }         /* AWS S3 */
+.icon-circle.chatbot-ia i { color: #9f7aea; }     /* Chatbot IA */
+.icon-circle.otp-por-email i { color: #f59e0b; }  /* OTP por Email */
+.icon-circle.vue-js i { color: #42b883; }         /* Vue.js */
+.icon-circle.supabase i { color: #3ecf8e; }       /* Supabase */
+.icon-circle.tailwindcss i { color: #38bdf8; }    /* TailwindCSS */
+.icon-circle.dark-mode i { color: #facc15; }      /* Dark Mode */

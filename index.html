@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Document</title>
+    <!-- swiper css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    
+    <!-- Icones -->
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Links de CSS -->
+    <!-- Pages; -->
+    <link rel="stylesheet" href="css/pages/home.css"> <!-- Link style.css -->
+    <link rel="stylesheet" href="css/pages/sobre.css"> <!-- Link style.css -->
+    <link rel="stylesheet" href="css/pages/projects.css"> <!-- Link style.css -->
+    <link rel="stylesheet" href="css/pages/skills.css"> <!-- Link style.css -->
+    <link rel="stylesheet" href="css/pages/certificados.css"> <!-- Link style.css -->
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout/layout.css"> <!-- Link layout.css -->
+    <!-- Responsive -->
+    <link rel="stylesheet" href="css/responsive/responsive.css"> <!-- Link para responsividade -->
+    <!-- Temas -->
+    <link rel="stylesheet" href="css/themes/temas.css"> <!-- Link para temas -->
+    <!-- Base -->
+    <link rel="stylesheet" href="css/base/cores.css"> <!-- Link para cores --> 
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/components.css"> <!-- Link para components -->
+    
+
+    <!-- Links de JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- swiper js -->
+    <script src="js/pages/home.js" defer></script> <!-- home js -->
+    <script src="js/pages/projects.js" defer></script> <!-- sobre js -->
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+</head>
+
+<body>
+
+    <header class="header"> <!-- Class Design header -->
+    <a href="#home" class="logo">Portfólio</a> <!-- Class logo | /logo -->
+        <nav class="navbar"> <!-- Class navbar -->
+            <a href="#home" class="active" >Home</a> <!-- ID home | /home & Class active -->
+            <a href="#sobre">Sobre</a> <!-- ID About -->
+            <a href="#projects">Projetos</a> <!-- ID Services -->
+            <a href="#habilidades">Habilidades</a> <!-- ID portfolio -->
+            <a href="#certificados">Certificados</a> <!-- ID contato -->
+        </nav> <!-- /navbar-->
+
+        <div class='bx bx-moon' id="darkMode-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header> <!-- Class /Design header -->
+
+    <section class="home" id="home"> <!--Class home | ID home -->
+        <div class="home-content"> <!-- Class home-content -->
+            <h2 class="h2_home">Olá, me chamo</h2>
+            <div class="h1_home">
+                <h1>Gabriel</h1>
+            </div>
+            <p>Um desenvolvedor de software</p>
+            <a href="assets/curriculo/Currículo_Gabriel.pdf" download="Currículo_Gabriel" class="btn">Download CV</a>  <!-- Class btn -->
+            <div class="container_connect_button" id="container_connect_button_home">
+                        <div class="contato-item">
+                            <a href="mailto:gabrieldiass707@gmail.com" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="bx bx-envelope" id="gmail"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contato-item">
+                            <a href="https://wa.me/5524998558044" target="_blank" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contato-item">
+                            <a href="https://www.linkedin.com/in/ogabrieldias/" target="_blank" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="bx bxl-linkedin" id="linkedin"></i>
+                                </div>                  
+                            </a>
+                        </div>
+                        <div class="contato-item">
+                            <a href="https://github.com/ogabrieldias" target="_blank" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="bx bxl-github" id="github"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+        </div><!-- Class /home-content -->
+            
+        
+    </section> <!-- Class /home | ID /home -->
+    
+    
+    <section class="sobre" id="sobre"> <!-- Class sobre | ID sobre  -->
+        <div class="sobre_content">
+            <div class="circle_title"></div>
+            <span class="title">
+                ABOUT
+            </span>
+            <h2 class="main_title">ABOUT</h2>
+        </div>
+        <div class="container_detalhe_title">
+            <div class="detalhe_left_title"></div>
+            <div class="detalhe_center_title"></div>
+            <div class="detalhe_left_title"></div>
+        </div>
+        <div class="container_secundario_about">
+            <div class="container_imagem_about">
+                <img src="images/Avatar/avatar.png" id="avatar" alt="Imagem de Avatar">
+            </div>
+            <div class="container_descricao_about" >
+                <h3 class="h3" id="h3_about">Olá, me chamo Gabriel</h3>
+                <p class="paragraph" id="paragraph_about">
+                    Profissional com vivência na área de Tecnologia da Informação, focado no aprendizado contínuo e na melhoria das habilidades. Tenho como objetivo enfrentar desafios técnicos de forma estratégica, aliando pensamento criativo e soluções inovadoras. 
+                </p>
+                <p class="paragraph" id="paragraph_about">
+                    Busco sempre me aprimorar para contribuir com projetos e equipes de maneira eficiente, agregando valor e promovendo resultados práticos.
+                </p>
+                <h4 class="h4" id="h4_about">O que eu faço?</h4>
+                <div class="container_profissao">
+                    <div class="profissao_about">
+                        <span class="profission_span">Front-End</span>
+                    </div>
+                    <div class="profissao_about">
+                        <span class="profission_span">Back-End</span>
+                    </div>
+                    <div class="profissao_about">
+                        <span class="profission_span">Infraestrutura de Redes</span>
+                    </div>
+                    <div class="profissao_about">
+                        <span class="profission_span">Reparo e Upgrade</span>
+                    </div>
+                    <div class="profissao_about">
+                        <span class="profission_span">Suporte Técnico</span>
+                    </div>
+                </div>
+                <div class="connect_me">
+                    <h4 id="h4_connect_me">Connect With Me</h4>
+                    <div class="container_connect_button">
+                        <div class="contato-item">
+                            <a href="mailto:gabrieldiass707@gmail.com" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="bx bx-envelope" id="gmail"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contato-item">
+                            <a href="https://wa.me/5524998558044" target="_blank" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contato-item">
+                            <a href="https://www.linkedin.com/in/ogabrieldias/" target="_blank" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="bx bxl-linkedin" id="linkedin"></i>
+                                </div>                  
+                            </a>
+                        </div>
+                        <div class="contato-item">
+                            <a href="https://github.com/ogabrieldias" target="_blank" class="color_connect_icon">
+                                <div class="icone">
+                                    <i class="bx bxl-github" id="github"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section> <!-- Class /sobre | ID /sobre  -->    
+
+    <section class="projects" id="projects"> <!-- Class projects | ID projects -->
+        <div class="title_content">
+            <div class="circle_title"></div> 
+            <span class="title">PROJECTS</span>
+            <h2 class="main_title">PROJECTS</h2>
+        </div>
+        <div class="container_detalhe_title">
+            <div class="detalhe_left_title"></div>
+            <div class="detalhe_center_title"></div>
+            <div class="detalhe_left_title"></div>
+        </div>
+        
+        <div class="container_secundario">
+
+            <!-- Coluna dos projetos -->
+            <div class="container_imagem_projects">
+
+                <!-- Projeto 1 -->
+                <div class="project_container"
+                    data-title="Clima"
+                    data-paragraph="Este projeto exibe o clima atual de qualquer cidade informada pelo usuário, mostrando temperatura, condições meteorológicas e uma imagem representativa do local. Utiliza APIs de clima e imagens para oferecer uma experiência rápida, visual e informativa sobre diferentes lugares do mundo."
+                    data-tools="JavaScript, Python, Flask, HTML, CSS"
+                    data-link="https://clima-ht49.onrender.com/">
+                    <div id="tela_project_01" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Clima/img_clima.png" class="imagem_projects imagem_desktop" alt="Imagem do Projeto Clima ">
+                            <img src="images/Clima/img_clima_mobile.png" class="imagem_projects imagem_mobile" alt="Imagem do Projeto Clima">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fim Projeto 1 -->
+                <div class="container_descricao">
+                    <div class="fixedText fixedText_none">
+                    <h2 class="titulo_projeto" id="titulo_clima">Clima</h2>
+                    <p class="paragraph_projeto">Este projeto exibe o clima atual de qualquer cidade informada pelo usuário, mostrando temperatura, condições meteorológicas e uma imagem representativa do local. Utiliza APIs de clima e imagens para oferecer uma experiência rápida, visual e informativa sobre diferentes lugares do mundo.</p>
+                        <div id="projectIcons">
+                            <!-- Ícones são inseridos aqui via JS -->
+                        </div>
+                        <div class="site_button_project">
+                            <a href="#" target="_blank" id="btn_project" class="btn">Ver Site</a> <!-- Class btn -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Projeto 2 -->
+                <div class="project_container"
+                    data-title="Cardápio Digital"
+                    data-paragraph="Sistema de delivery com múltiplos métodos de pagamento e dashboards por função."
+                    data-tools="Python, JavaScript, Dark Mode, HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/cardapio-digital/html/index.html">
+                    <div id="tela_project_02" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Cardapio/img_cardapio.png" class="imagem_projects imagem_desktop" alt="Imagem do Projeto Clima Mobile">
+                            <img src="images/Cardapio/img_cardapio_mobile.png" class="imagem_projects imagem_mobile" alt="Imagem do Projeto Clima Desktop">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 2 -->
+                <div class="container_descricao">
+                    <div class="fixedText fixedText_none">
+                    <h2 class="titulo_projeto" id="titulo_cardapio" >Cardápio Digital</h2>
+                    <p class="paragraph_projeto">Sistema de delivery com múltiplos métodos de pagamento e dashboards por função.</p>
+                        <div id="projectIcons">
+                            <!-- Ícones são inseridos aqui via JS -->
+                        </div>
+                        <div class="site_button_project">
+                            <a href="#" target="_blank" id="btn_project" class="btn">Ver Site</a> <!-- Class btn -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Projeto 3 -->
+                <div class="project_container"
+                    data-title="Portfolio"
+                    data-paragraph="Plataforma comunitária para itens perdidos com modo claro/escuro."
+                    data-tools="HTML, CSS, Dark Mode"
+                    data-link="https://ogabrieldias.github.io/myportfolio/">
+                    <div id="tela_project_03" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Portfolio/img_portfolio.png" class="imagem_projects imagem_desktop" alt="Imagem do Projeto Clima">
+                            <img src="images/Portfolio/img_portfolio_mobile.png" class="imagem_projects imagem_mobile" alt="Imagem do Projeto Clima Desktop">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 3 -->
+                <div class="container_descricao">
+                    <div class="fixedText fixedText_none">
+                    <h2 class="titulo_projeto" id="titulo_portfolio" >Portfolio</h2>
+                    <p class="paragraph_projeto">Plataforma comunitária para itens perdidos com modo claro/escuro.</p>
+                        <div id="projectIcons">
+                            <!-- Ícones são inseridos aqui via JS -->
+                        </div>
+                        <div class="site_button_project">
+                            <a href="#" target="_blank" id="btn_project" class="btn">Ver Site</a> <!-- Class btn -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Projeto 4 -->
+                <div class="project_container"
+                    data-title="Android"
+                    data-paragraph="Projeto que simula um site Android com efeito moderno."
+                    data-tools="HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/android/">
+                    <div id="tela_project_04" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Android/img_android.png" class="imagem_projects imagem_desktop" alt="Imagem do Projeto Clima ">
+                            <img src="images/Android/img_android_mobile.png" class="imagem_projects imagem_mobile" alt="Imagem do Projeto Clima Desktop">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 4 -->
+                <div class="container_descricao">
+                    <div class="fixedText fixedText_none">
+                    <h2 class="titulo_projeto" id="titulo_android" >Android</h2>
+                    <p class="paragraph_projeto">Projeto que simula um site Android com efeito moderno.</p>
+                        <div id="projectIcons">
+                            <!-- Ícones são inseridos aqui via JS -->
+                        </div>
+                        <div class="site_button_project">
+                            <a href="#" target="_blank" id="btn_project" class="btn">Ver Site</a> <!-- Class btn -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Projeto 5 -->
+                <div class="project_container"
+                    data-title="Login"
+                    data-paragraph="Interface de autenticação desenvolvida com foco em simplicidade, responsividade e usabilidade. Ideal para integração com sistemas web que exigem controle de acesso."
+                    data-tools="HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/projeto-login/">
+                    <div id="tela_project_05" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Login/img_login.png" class="imagem_projects imagem_desktop" alt="Imagem do Projeto Clima ">
+                            <img src="images/Login/img_login_mobile.png" class="imagem_projects imagem_mobile" alt="Imagem do Projeto Clima Desktop">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 5 -->
+                <div class="container_descricao">
+                    <div class="fixedText fixedText_none">
+                    <h2 class="titulo_projeto" id="titulo_login">Login</h2>
+                    <p class="paragraph_projeto">Interface de autenticação desenvolvida com foco em simplicidade, responsividade e usabilidade. Ideal para integração com sistemas web que exigem controle de acesso.</p>
+                        <div id="projectIcons">
+                            <!-- Ícones são inseridos aqui via JS -->
+                        </div>
+                        <div class="site_button_project">
+                            <a href="#" target="_blank" id="btn_project" class="btn">Ver Site</a> <!-- Class btn -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Projeto 6 -->
+                <div class="project_container"
+                    data-title="Social"
+                    data-paragraph="Simulação visual de uma rede social, com páginas estilizadas que representam plataformas populares como Facebook, Instagram, Twitter, YouTube e GitHub. O projeto demonstra domínio de estruturação semântica e design responsivo."
+                    data-tools="HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/projeto-social/">
+                    <div id="tela_project_06" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Social/img_social.png" class="imagem_projects imagem_desktop" alt="Imagem do Projeto Clima ">
+                            <img src="images/Social/img_social_mobile.png" class="imagem_projects imagem_mobile" alt="Imagem do Projeto Clima Desktop">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 6 -->
+            </div>
+
+            <!-- Coluna da descrição -->
+            <div class="container_descricao">
+                <div class="fixedText">
+                <h2 id="projectTitle" >Clima</h2>
+                <p id="projectParagraph" class="paragraph_projeto">Este projeto exibe o clima atual de qualquer cidade informada pelo usuário, mostrando temperatura, condições meteorológicas e uma imagem representativa do local. Utiliza APIs de clima e imagens para oferecer uma experiência rápida, visual e informativa sobre diferentes lugares do mundo.</p>
+                    <div id="projectIcons">
+                        <!-- Ícones são inseridos aqui via JS -->
+                    </div>
+                    <div class="site_button_project">
+                        <a href="#" target="_blank" id="btn_project" class="btn">Ver Site</a> <!-- Class btn -->
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section> <!-- Class /projects | ID /projects -->
+
+    <section class="habilidades" id="habilidades" > <!-- Class planos | ID planos -->
+        <div class="title_content">
+            <div class="circle_title"></div> 
+            <span class="title">HABILIDADES</span>
+            <h2 class="main_title">HABILIDADES</h2>
+        </div>
+        <div class="container_detalhe_title">
+            <div class="detalhe_left_title"></div>
+            <div class="detalhe_center_title"></div>
+            <div class="detalhe_left_title"></div>
+        </div>
+        <div class="container_geral_skills">
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </div>
+                <span class="span_skill">HTML5</span>
+            </div>
+            
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </div>
+                <span class="span_skill">CSS3</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <span class="span_skill">JavaScript</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                </div>
+                <span class="span_skill">Bootstrap</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+                </div>
+                <span class="span_skill">Python</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-mysql-original colored"></i>
+                </div>
+                <span class="span_skill">MySQL</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-postgresql-plain colored"></i>
+                </div>
+                <span class="span_skill">PostgreSQL</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-firebase-plain colored"></i>
+                </div>
+                <span class="span_skill">Firebase</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+                <span class="span_skill">Git</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-github-original"></i>
+                </div>
+                <span class="span_skill">GitHub</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                </div>
+                <span class="span_skill">Figma</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-vscode-plain colored"></i>
+                </div>
+                <span class="span_skill">Visual Studio Code</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-powershell-plain"></i>
+                </div>
+                <span class="span_skill">PowerShell</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-windows11-original colored"></i>
+                </div>
+                <span class="span_skill">Windows</span>
+            </div>
+            
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                </div>
+                <span class="span_skill">Linux</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-kalilinux-original colored"></i>
+                </div>
+                <span class="span_skill">Kali Linux</span>
+            </div>
+            
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
+                </div>
+                <span class="span_skill">Azure</span>
+            </div>
+        </div>
+    </section> <!-- Class /planos | ID /planos -->
+    
+    <section class="certificados" id="certificados"> <!-- Class depoimentos | ID depoimentos -->
+        <div class="title_content">
+            <div class="circle_title"></div> 
+            <span class="title">CERTIFICADOS</span>
+            <h2 class="main_title">CERTIFICADOS</h2>
+        </div>
+        <div class="container_detalhe_title">
+            <div class="detalhe_left_title"></div>
+            <div class="detalhe_center_title"></div>
+            <div class="detalhe_left_title"></div>
+        </div>
+        <div class="container_geral">
+            <div class="container_esquerda" id="container_esquerda_certificados">
+                <div class="container_descricao_certificado" style="padding: 2rem; display: flex;  flex: 7 1 300px; min-width: 250px; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column; align-items: center;">
+                    <h3 class="h3" id="h3_certificados">FAETEC</h3>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Operador de Computador 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Excel avançado + VBA 
+                    </p>
+                    
+                    <h3 class="h3" id="h3_certificados">Firjan SENAI</h3>
+                    <p class="paragraph" id="paragraph_certificados">
+                       Assistente de logística
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Operador de Infraestrutura de Redes
+                    </p>
+
+                    <h3 class="h3" id="h3_certificados">DIO</h3>
+                    <p class="paragraph" id="paragraph_certificados" style="text-align: center;">
+                        Bootcamp Microsoft AI for Tech - Criando Prompts Inteligentes 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Bootcamp Microsoft Certification - DP100
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Bootcamp Suzano - Python Developer
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Bootcamp Randstad - Análise de Dados 
+                    </p>
+
+                    <h3 class="h3" id="h3_certificados">Curso em Vídeo</h3>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Segurança da Informação: Módulo 00 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Segurança da Informação: Módulo 01  
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Segurança da Informação: Módulo 02  
+                    </p>                    
+                    <p class="paragraph" id="paragraph_certificados">
+                        Segurança da Informação: Módulo 03   
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Segurança da Informação: Módulo 04   
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Redes de Computadores  
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Curso de Endereçamento IPv4  
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        HTML5 e CSS3: módulo 1 de 5   
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        HTML5 e CSS3: módulo 2 de 5
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        HTML5 e CSS3: módulo 3 de 5  
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        HTML5 e CSS3: módulo 4 de 5 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        HTML5 e CSS3: módulo 5 de 5  
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Python 3 – Mundo 1   
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Python 3 – Mundo 2 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Python 3 – Mundo 3 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Javascript 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        MySQL 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Git e GitHub 
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Linux  
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Hardware  
+                    </p>
+                    <p class="paragraph" id="paragraph_certificados">
+                        Algoritmo  
+                    </p>
+
+                    <h3 class="h3" id="h3_certificados">4Linux</h3> <!-- 4Linux -->
+                    <p class="paragraph" id="paragraph_certificados">
+                        701 - Linux Fundamentals
+                    </p> <!-- 4Linux -->
+                    <p class="paragraph" id="paragraph_certificados">
+                        702 - Linux Essentials
+                    </p> <!-- 4Linux -->
+
+                    <h3 class="h3" id="h3_certificados">Cursae</h3> <!-- Cursae -->
+                    <p class="paragraph" id="paragraph_certificados">
+                        Figma
+                    </p> <!-- /Cursae -->
+
+                    <h3 class="h3" id="h3_certificados">Hardware Redes Brasil</h3> <!-- Hardware Redes Brasil -->
+                    <p class="paragraph" id="paragraph_certificados">
+                        Cisco Packet Tracer
+                    </p> <!-- /Hardware Redes Brasil -->
+                </div>
+            </div>
+        </div>
+        
+    </section> <!-- Class /planos | ID /planos -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright © 2025 por Gabriel Bernardino Dias | All rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+#habilidades { /* Background da section */ 
+    background-color: var(--bg-color-figma);
+}
+
+.container_geral_skills {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 2rem 7rem;
+    justify-content: center;
+}
+
+.container_skills_singular {
+    background-color: #171717;
+    color: color-mix(in oklab, #fff 80%, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2.8rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: .2rem solid var(--bg-color-header);
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+.container_skills_singular:hover {
+    transform: rotate(5deg) scale(1.1);
+    background-color: #3c3c3c;
+    outline-color: var(--text-color-figma); 
+}
+
+.icone_skill {
+    font-size: 2rem; 
+    margin-right: 1rem; 
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container_skills_singular:hover .icone_skill {
+    transform: rotate(360deg) scale(1.2); 
+}
+
+.span_skill {
+    font-size: 1.6rem;
+    text-align: center;
+}
+

@@ -1,0 +1,82 @@
+:root {
+    /* Cores principais */
+    --bg-color: #f0f8ff;
+    --text-color: #333;
+    --white-color: #fdfdfd;
+    --cor-destaque: #00ADB5;
+
+    /* Cor de header */
+    --bg-color-header: white;
+
+    /* Cores de texto */
+    --text-color-figma: #12121b;
+    --color-title: #00FFF5;
+    /* Cor de texto invertida */
+    --text-color-invert: white;
+    --text-color-white: white;
+    /* Cor do efeito de titulo entre sections */
+    --text-color-big-title-effect: #00000045;
+    --text-color-main-title-effect: black;
+
+
+    /* Cores de menu */
+    --icon-menu: rgb(4, 217, 57);
+    --logo: rgb(4, 217, 57);
+    --sticky: rgb(4, 217, 57);
+
+    /* Cores de botão */
+    --button-background-color: rgba(4, 217, 57, 0.200);
+    --button-border-background-color: rgb(4, 217, 57);
+    --button-background-hover-color: rgb(4, 217, 57);
+    --button-background-color-02: #171717;
+    --button-background-color-02-hover: #3c3c3c;
+
+    /* Cor de borda de botão */
+    --border-button-color: rgb(4, 217, 57);
+
+    /* Cor de texto de botão */
+    --text-color-button: color-mix(in oklab, #fff 80%, transparent);
+
+    /* Efeitos e sombras */
+    --shadow-color: rgba(0, 0, 0, .2);
+
+    /* Cor principal do sistema */
+    --main-color: #00FFF5;
+
+    /* Cor do detalhe abaixo do titulo com efeito */
+    --detail-color: black;
+}
+
+.dark-mode { /* (dark-mode2) */
+    /*cor excluida: #393E46 */     
+    --bg-color: #222831;
+    --bg-color-figma: black;
+    --text-color-figma: white;
+    --shadow-color: rgba(0, 0, 0, .7);
+    --main-color: #00ADB5;
+    --cor-destaque: #00FFF5; 
+    --bg-color-header: #040607;
+
+    
+    /* Cor de texto invertida */
+    --text-color-invert: black;
+    --text-color-white: white;
+
+    /* Cor do efeito de titulo entre sections */
+    --text-color-big-title-effect: #ffffff45;
+    --text-color-main-title-effect: white;
+
+    /* Cor do detalhe abaixo do titulo com efeito */
+    --detail-color: white;
+
+    /* Cor de background de botão */
+    --button-background-color-02: #171717;
+    --button-background-color-02-hover: #3c3c3c;
+    /* Cor de borda de botão */
+    --border-button-color: white;
+    /* Cor de texto de botão */
+    --text-color-button: color-mix(in oklab, #fff 80%, transparent);
+
+
+}	
+
