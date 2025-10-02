@@ -1,0 +1,122 @@
+/* .container {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+ Imagem da fechadura 
+.fechadura {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+Área onde o olho aparece 
+.zoom-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  clip-path: circle(25% at 50% 47%);
+  overflow: hidden;
+  transition: clip-path 0.5s ease;
+}
+
+Olho cibernético 
+.zoom-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+}
+ */
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper, .content {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.intro {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.intro {
+    font-size: 2rem;
+    font-family: "Roboto", serif;
+}
+
+.intro p {
+    font-size: 8rem;
+    font-family: "Lobster", system-ui;
+    font-weight: bolder;
+}
+
+.content {
+    overflow-x: hidden;
+}
+
+.content .section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.content section.hero-section{
+    padding: 0rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    clip-path: circle(25% at 50% 47%);
+    overflow: hidden;
+}  
+
+/* Configuração imagem  */
+
+.image-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    z-index: 3;
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+} 
