@@ -56,6 +56,13 @@ Olho cibernético
     z-index: 1;
 }
 
+.image_hacker {
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    z-index: 1;
+}
+
 .mask-container {
     position: absolute;
     top: 0;
@@ -115,6 +122,7 @@ Olho cibernético
     overflow: hidden;
     clip-path: circle(13% at 50% 50%);
     overflow: hidden;
+    margin-bottom: 14rem;
 }  
 
 .image_win11 {
@@ -139,3 +147,4 @@ Olho cibernético
     display: block;
     position: absolute;
 } 
+

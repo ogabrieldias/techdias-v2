@@ -48,14 +48,14 @@ window.addEventListener("load", () => {
             ease: "power2.out"
         }, "<")
         .to(".intro", {
-            scale: 2,
+            scale: 1.7,
             ease: "power2.out"
         }, "<")
         .to(".section.hero-section", {
             scale: 1.4,
             boxShadow: `10000px 0 0 0 rgba(0,0,0,0.5) inset`,
             transformOrigin: "center center",
-            clipPath: "circle(80% at 50% 50%)",
+            clipPath: "circle(85% at 50% 50%)",
         }, "<")
         .to(".image-container", {
             autoAlpha: 0
