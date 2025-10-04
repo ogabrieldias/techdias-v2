@@ -56,6 +56,20 @@ Olho cibernético
     z-index: 1;
 }
 
+.mask-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(12.5% at 50% 54%); /* ajuste conforme o buraco da fechadura */
+    overflow: hidden;
+}
+
 .intro {
     position: absolute;
     left: 0%;
@@ -99,10 +113,15 @@ Olho cibernético
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    clip-path: circle(25% at 50% 47%);
+    clip-path: circle(13% at 50% 50%);
     overflow: hidden;
 }  
 
+.image_win11 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 7rem;
+}
 /* Configuração imagem  */
 
 .image-container {
