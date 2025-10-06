@@ -10,7 +10,12 @@
     <!-- ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    
+    <!-- ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+    <!-- ScrollSmoother -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollSmoother.min.js"></script>
+
     <!-- swiper css -->
     <link
     rel="stylesheet"
@@ -44,7 +49,7 @@
     <link rel="stylesheet" href="css/components/components.css"> <!-- Link para components -->
 
     <link rel="stylesheet" href="css/test/test.css"> <!-- Link para components -->
-    
+    <link rel="stylesheet" href="css/pages/timeline.css">
 
     <!-- Links de JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- swiper js -->
@@ -53,6 +58,7 @@
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/test/test.js"></script>
+    <script src="js/pages/timeline.js"></script>
     
 </head>
 
@@ -76,48 +82,14 @@
         <img src="images/Hacker/hacker.jpg" class="image_hacker" alt="">
         <div class="mask-container">
             <div class="intro">
-                <h1>Olá, me chamo Gabriel</h1>
-                <p>Software Engineer</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <img src="images/Fechadura/fechadura.png" alt="">
-            
-        </div>
-        <div class="content">
-            <section class="section hero-section">
-                <img src="images/Olho/win11.png" class="image_win11" alt="">
-            </section>
-            <section class="about-section">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda quisquam totam veritatis ducimus eligendi minus nesciunt vero illum veniam sit quae tenetur, expedita eaque. Rem adipisci eveniet omnis quam?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam velit magni saepe autem quod iste iusto odio vel, facilis voluptas accusantium inventore corporis, nobis asperiores molestiae? Amet, neque fuga!
-                </p>
-            </section>
-        </div>
-        
-    </div>
-
-    <!-- <section class="home" id="home"> 
-        <div class="container">
-            <img src="images/Fechadura/fechadura.png" alt="Fechadura" class="fechadura" />
-            <div class="zoom-area">
-                <img src="images/Olho/olho.png" alt="Conteúdo Zoom" class="zoom-img" />
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Espaço extra para scroll funcionar -->
-    <div style="height: 200vh;"></div>
-
-    <section class="home" id="home"> <!--Class home | ID home -->
-        <div class="home-content"> <!-- Class home-content -->
-            <h2 class="h2_home">Olá, me chamo</h2>
-            <div class="h1_home">
-                <h1>Gabriel</h1>
-            </div>
-            <p>Um desenvolvedor de software</p>
-            <a href="assets/curriculo/Currículo_Gabriel.pdf" download="Currículo_Gabriel" class="btn">Download CV</a>  <!-- Class btn -->
-            <div class="container_connect_button" id="container_connect_button_home">
+               <div class="home-content"> <!-- Class home-content -->
+                    <h2 class="h2_home">Olá, me chamo</h2>
+                    <div class="h1_home">
+                        <h1>Gabriel</h1>
+                    </div>
+                    <p>Um desenvolvedor de software</p>
+                    <a href="assets/curriculo/Currículo_Gabriel.pdf" download="Currículo_Gabriel" class="btn">Download CV</a>  <!-- Class btn -->
+                    <div class="container_connect_button" id="container_connect_button_home">
                         <div class="contato-item">
                             <a href="mailto:gabrieldiass707@gmail.com" class="color_connect_icon">
                                 <div class="icone">
@@ -147,11 +119,63 @@
                             </a>
                         </div>
                     </div>
-        </div><!-- Class /home-content -->
+                </div><!-- Class /home-content -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/Fechadura/fechadura.png" alt="">
+        </div>
+        <div class="content">
+            <section class="section hero-section">
+                <img src="images/Olho/win11.png" class="image_win11" alt="">
+            </section>
             
-        
-    </section> <!-- Class /home | ID /home -->
+        </div>
+    </div>
+
+    <!-- <section class="home" id="home"> 
+        <div class="container">
+            <img src="images/Fechadura/fechadura.png" alt="Fechadura" class="fechadura" />
+            <div class="zoom-area">
+                <img src="images/Olho/olho.png" alt="Conteúdo Zoom" class="zoom-img" />
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Espaço extra para scroll funcionar -->
     
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section class="timeline-section">
+                <div class="timeline-item active">
+                    <h3>2010</h3>
+                    <p>Primeiros passos no mundo da tecnologia e desenvolvimento web.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2014</h3>
+                    <p>Desenvolveu seu primeiro projeto completo utilizando HTML, CSS e JS.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2018</h3>
+                    <p>Ingressou em projetos de código aberto e iniciou carreira como freelancer.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2021</h3>
+                    <p>Dominou frameworks modernos e aprimorou suas habilidades em UX/UI.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2025</h3>
+                    <p>Fundou uma startup inovadora voltada para soluções digitais criativas.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
     
     <section class="sobre" id="sobre"> <!-- Class sobre | ID sobre  -->
         <div class="sobre_content">

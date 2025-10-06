@@ -60,37 +60,41 @@ section {
 
 .h2_home {
     font-size: 4rem;
-    color: var(--text-color-figma); 
+    color: white; /* estava var(--text-color-figma)  */
+    text-align: center;
 }
 
 .home-content h1 {
     font-size: 10rem; 
     font-weight: 700;
     margin-bottom: .3rem;
-    color: var(--text-color-figma);
+    color: white; /* estava var(--text-color-figma) */
+    text-align: center;
 }
 
 .home-content p {
     font-size: 2.0rem;
     font-weight: 700;
     padding-bottom: 2rem;
-    color: var(--text-color-figma);
+    color: white; /* estava var(--text-color-figma) */
     text-align: center
 }
 
 input.btn, a.btn {
-    display: inline-block;
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: auto;
     padding: 1.2rem 2.8rem;
     background: var(--button-background-color);
     border-radius: 5rem;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
-    font-size: 1.6rem;
-    color: var(--text-color-figma);
-    letter-spacing: .1rem;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 0.7rem;
     font-weight: 600;
     border: 3px solid var(--button-border-background-color);
     transition: .5s ease;
-
 }
 
 input.btn:hover, a.btn:hover {

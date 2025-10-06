@@ -154,7 +154,7 @@
   height: 60px;
   margin: 0 auto 10px;
   border-radius: 50%;
-  background: #1f1f1f;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +165,7 @@
 
 .icone i {
   font-size: 26px;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: transform 0.3s ease;
 }
 

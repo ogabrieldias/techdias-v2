@@ -49,6 +49,9 @@ Olho cibernético
     box-sizing: border-box;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
 
 .wrapper, .content {
     position: relative;
@@ -73,7 +76,7 @@ Olho cibernético
     display: flex;
     justify-content: center;
     align-items: center;
-    clip-path: circle(12.5% at 50% 54%); /* ajuste conforme o buraco da fechadura */
+    clip-path: circle(11.5% at 50% 54%); /* ajuste conforme o buraco da fechadura */
     overflow: hidden;
 }
 
@@ -83,6 +86,7 @@ Olho cibernético
     top: 0%;
     right: auto;
     bottom: auto;
+    margin-top: 10rem;
     z-index: 2;
     display: flex;
     width: 100%;
@@ -119,9 +123,8 @@ Olho cibernético
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
     clip-path: circle(13% at 50% 50%);
-    overflow: hidden;
     margin-bottom: 14rem;
 }  
 
