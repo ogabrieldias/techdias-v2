@@ -16,6 +16,10 @@
     <!-- ScrollSmoother -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollSmoother.min.js"></script>
 
+    <!-- Motion Path Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js" defer></script>
+
+
     <!-- swiper css -->
     <link
     rel="stylesheet"
@@ -144,32 +148,54 @@
 
     <!-- Espaço extra para scroll funcionar -->
     
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-            <section class="timeline-section">
-                <div class="timeline-item active">
-                    <h3>2010</h3>
-                    <p>Primeiros passos no mundo da tecnologia e desenvolvimento web.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2014</h3>
-                    <p>Desenvolveu seu primeiro projeto completo utilizando HTML, CSS e JS.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2018</h3>
-                    <p>Ingressou em projetos de código aberto e iniciou carreira como freelancer.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2021</h3>
-                    <p>Dominou frameworks modernos e aprimorou suas habilidades em UX/UI.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>2025</h3>
-                    <p>Fundou uma startup inovadora voltada para soluções digitais criativas.</p>
-                </div>
-            </section>
+    <section class="timeline-horizontal-section">
+        <svg class="timeline-path" width="100%" height="200" viewBox="0 0 9000 200" preserveAspectRatio="none">
+        <path
+            d="
+            M0,120
+            C90,50 300,150 450,100 
+            S750,150 900,100 
+            S1150,50 1300,100 
+            S1550,150 1700,100 
+            S1950,50 2100,100 
+            S2350,150 2500,100 
+            S2750,50 2900,100 
+            S3150,150 3300,100 
+            S3550,50 3700,100 
+            S3950,150 4100,100 
+            S4350,50 4500,100 
+            S4750,150 5000,100"
+            stroke="#00ffcc"
+            stroke-width="2"
+            fill="none"
+        />
+        </svg>
+
+
+        <div class="timeline-wrapper">
+            <div class="timeline-item" id="timeline-inicial">
+                <h3>2014</h3>
+                <p>Primeiros passos no mundo da tecnologia e programação.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2016</h3>
+                <p>Criação do primeiro site pessoal com HTML, CSS e JavaScript.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2019</h3>
+                <p>Entrada no mercado de trabalho e início na área de desenvolvimento web.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2022</h3>
+                <p>Domínio de frameworks modernos e UX/UI design.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2025</h3>
+                <p>Fundação da primeira startup focada em IA e automação criativa.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
 
 
 

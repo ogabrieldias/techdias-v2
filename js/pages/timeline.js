@@ -1,67 +1,62 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-window.addEventListener("load", () => {
-  // === Scroll suave com GSAP ScrollSmoother ===
-  const smoother = ScrollSmoother.create({
-    wrapper: "#smooth-wrapper",
-    content: "#smooth-content",
-    smooth: 1.2,
-    normalizeScroll: true,
-    effects: true,
-  });
-
+  const wrapper = document.querySelector(".timeline-wrapper");
   const items = gsap.utils.toArray(".timeline-item");
+  const path = document.querySelector(".timeline-path path");
 
-  // === Ativa o primeiro item no início ===
-  gsap.set(items[0], { opacity: 1, scale: 1.1 });
-  items[0].classList.add("active");
-
-  // === Animação de entrada para cada card ===
-  items.forEach((item, i) => {
-    gsap.from(item, {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: item,
-        scroller: smoother.wrapper(), // ESSENCIAL com ScrollSmoother
-        start: "top 85%",
-        toggleActions: "play none none reverse",
-      },
-    });
+  // === Scroll horizontal controlado pelo scroll vertical ===
+  const horizontalScroll = gsap.to(wrapper, {
+    x: () => -(wrapper.scrollWidth - window.innerWidth),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".timeline-horizontal-section",
+      start: "top top",
+      end: () => "+=" + (wrapper.scrollWidth - window.innerWidth),
+      scrub: 1.5,
+      pin: true,
+      anticipatePin: 1,
+    },
   });
 
-  // === Destaque conforme o scroll ===
+  // === Linha SVG interativa sincronizada com o scroll ===
+  const pathLength = path.getTotalLength();
+  path.style.strokeDasharray = pathLength;
+  path.style.strokeDashoffset = pathLength;
+
+  gsap.to(path, {
+    strokeDashoffset: 0,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".timeline-horizontal-section",
+      start: "top top",
+      end: () => "+=" + (wrapper.scrollWidth - window.innerWidth),
+      scrub: 1.5,
+    },
+  });
+
+  // === Cards com destaque em foco ===
   items.forEach((item) => {
     ScrollTrigger.create({
       trigger: item,
-      scroller: smoother.wrapper(), // importante
-      start: "center 75%",
-      end: "bottom 50%",
+      containerAnimation: horizontalScroll.scrollTrigger,
+      start: "center center",
+      end: "center center",
       onEnter: () => activateItem(item),
       onEnterBack: () => activateItem(item),
     });
   });
 
-  // === Função para destacar o item ativo ===
   function activateItem(activeItem) {
     items.forEach((item) => {
       const isActive = item === activeItem;
       gsap.to(item, {
-        scale: isActive ? 1.1 : 0.85,
-        opacity: isActive ? 1 : 0.3,
-        boxShadow: isActive
-          ? "0 0 60px rgba(0,255,150,0.4)"
-          : "0 0 15px rgba(0,255,150,0.1)",
+        scale: isActive ? 1.1 : 0.9,
+        opacity: isActive ? 1 : 0.4,
         duration: 0.6,
-        ease: "power2.out",
+        ease: "power3.out",
       });
       item.classList.toggle("active", isActive);
     });
   }
-
-  // === Recalibra tudo ao redimensionar ===
-  ScrollTrigger.addEventListener("refresh", () => smoother.refresh());
-  ScrollTrigger.refresh();
 });
