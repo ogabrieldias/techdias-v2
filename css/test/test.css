@@ -62,7 +62,7 @@ body.no-scroll {
 .image_hacker {
     position: absolute;
     width: 100%;
-    height: 120vh;
+    height: 117vh; /* Faz com que a imagem fique no tamanho certo para encaixar na section de baixos sem deixar espaços em branco */
     z-index: 1;
 }
 
@@ -108,9 +108,9 @@ body.no-scroll {
     font-weight: bolder;
 }
 
-.content {
-    overflow-x: hidden;
-}
+/* .content {
+    overflow-x: hidden; Estava atrapalhando a imagem do windows ficar full na section de baixo
+} */
 
 .content .section {
     width: 100%;
@@ -125,12 +125,12 @@ body.no-scroll {
     background-size: cover;
     /* overflow: hidden; */
     clip-path: circle(13% at 50% 50%);
-    margin-bottom: 14rem;
+    margin-bottom: 13rem;
 }  
 
 .image_win11 {
-    width: 100%;
-    height: 100vh;
+    width: 97%;
+    height: 97vh;
     margin-top: 7rem;
 }
 /* Configuração imagem  */
@@ -150,4 +150,5 @@ body.no-scroll {
     display: block;
     position: absolute;
 } 
+
 
